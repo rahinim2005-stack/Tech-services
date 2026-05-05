@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Business</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Rahini Tech Services</h2>
+        <div>
+            <a href="business website.html">Home</a>
+            <a href="intex.html">Services</a>
+            <a href="myprofile.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Grow Your Business Online</h1>
+        <p>We help you build websites and get more customers</p>
+        <button>Get Started</button>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-box">
+            <h3>Website Design</h3>
+            <p>Modern and responsive websites</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Marketing</h3>
+            <p>Grow your business online</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Support</h3>
+            <p>24/7 customer support</p>
+        </div>
+    </div>
+    <div class="products">
+    <h2>Our Products</h2>
+
+    <div class="product">
+        <h3>Website Package</h3>
+        <p>₹999</p>
+        <button onclick="orderNow('Website Package', 999)">Order on WhatsApp</button>
+    </div>
+
+    <div class="product">
+        <h3>Marketing Package</h3>
+        <p>₹1499</p>
+        <button onclick="orderNow('Marketing Package', 1499)">Order on WhatsApp</button>
+    </div>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Click below to chat on WhatsApp</p>
+
+        <a href="https://wa.me/918925397499">
+            <button>Chat Now</button>
+        </a>
+    </div>
+
+<script>
+function orderNow(product, price) {
+    let phone = "918925397499"; // replace your number
+    let message = "🧾 ORDER BILL\n\nProduct: " + product + "\nPrice: ₹" + price + "\n\nPlease confirm order.";
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+    window.open(url, '_blank');
+}
+</script>
+
+
+</body>
+</html>
